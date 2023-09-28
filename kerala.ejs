@@ -1,0 +1,389 @@
+
+                <!-- ... (other featured items) ... -->
+                <!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</head>
+<body>
+
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+            </div>
+        </div>
+    </section>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (your CSS and meta tags) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <style>
+       body{
+       width:100%;
+       height:100%;
+        background-image:url("https://img.freepik.com/free-photo/flat-lay-yellow-luggage-with-copy-space_23-2148786124.jpg?size=626&ext=jpg&ga=GA1.1.1171379849.1678970885&semt=ais.jpg");
+       }
+.py-4{
+    padding: 4rem 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.title-wrap{
+    text-align: center;
+    padding: 1.4rem 0;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.lg-title{
+    font-size: 1.8rem;
+}
+.sm-title{
+    display: block;
+    color: #787878;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.7;
+}
+.my-2{
+    margin: 2rem 0;
+}
+.shadow:hover{
+    -webkit-box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+            box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+}
+.featured-item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.featured-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+}
+@media screen and (max-width: 460px){
+    .featured-item-content{
+        -webkit-transform: translateY(68%);
+            -ms-transform: translateY(68%);
+                transform: translateY(68%);
+    }
+}
+@media screen and (min-width: 768px){
+    
+    }
+    .featured-row, .services-row, .footer-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .featured-item{
+        margin: 0;
+    }
+    @media screen and (min-width: 1400px){
+    .featured-row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.featured-item-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    -webkit-transform: translateY(68%);
+        -ms-transform: translateY(68%);
+            transform: translateY(68%);
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.featured-item-content span{
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+}
+.featured-item-content .text{
+    color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.featured-item:hover .featured-item-content{
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+}
+.btnone{
+    margin:0px 10px;
+    border:2px solid #fabd02;
+    padding:13px 35px;
+    letter-spacing :1px;
+    color: #000;
+    border-radius:30px;
+    background-color: #fabd02;
+     text-decoration:none; 
+     float:center;
+     margin-left:450px;
+     margin-top:100px;
+
+
+}
+p{
+    font-size:40px;
+     color:black;
+     font-family:'Brush Script MT', cursive;
+     font-weight:"normal";
+     margin-left:500px;
+}
+.middle img {
+     margin-left:400px;
+     width:690px;
+     height:500px;
+}
+        /* ... (your existing CSS styles) ... */
+        
+        /* Add some additional styles for the slideshow */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        /* ... (other styles for the slideshow) ... */
+    </style>
+</head>
+<body>
+    <div class="middle">
+    <center>
+    <section id="featured" class="py-4">
+        <div class="container">
+            <!-- ... (your existing content) ... -->
+            <div class="featured-row">
+             
+                <!-- Add the slideshow container here -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <center>
+                        <a href="dashboard">
+                            <p>Boating</p>
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fHww&w=1000&q=80.jpeg" alt="featured place 1">
+                        <a href="dashboard" class="btnone">Book it</a>
+                        <!-- <div>
+                            <a href="dashboard" class="btnone">Book it</a>
+                        </div> -->
+                        </a>
+                        </center>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <center>
+                        <a href="dashboard">
+                            <p>Tea plantation</p>
+                        <img src="https://media.istockphoto.com/id/511119924/photo/tea-plantations-and-river-in-hills-kerala-india.jpg?s=612x612&w=0&k=20&c=pYHem1q8SIdCC7t7pv3s6QM1ZrmU3nkCoSaEQMg8vqg=.jpg" alt="featured place 2">
+                        <a href="dashboard" class="btnone">Book it</a>
+                        <div class="text"></div></a>
+                        </center>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <center>
+                        <a href="dashboard">
+                            <p>Route map</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpS-snWc15ABFfzGixu4IED5kjabkVOzi-Hg&usqp=CAU.jpg" alt="featured place 3">
+                        
+                        <a href="#" class="btnone">view map</a><div class="text"></div></a>
+                        </center>
+                    </div>
+                </div>
+                <!-- Add the slideshow controls (dots) here -->
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+                <div class="featured-item-content">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                       
+                    </span>
+                   
+                    
+                <!-- ... (other featured items) ... -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript code for the slideshow (you can keep this in your HTML)
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    </center>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Make Your Move</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <style>
+           .vi{background-image: url("https://green-travel-blog.com/wp-content/uploads/2022/09/woman-sitting-on-a-rock-in-norway-while-solo-traveling-%C2%A9EVERST-adobestock-2048x1366.jpeg");
+      background-repeat: no-repeat;
+      background-position: center;
+    height:800px;
+    width:100%;
+     position:absolute;
+    }
+            .navbar {
+                width: 100%;
+                background-color:darkgray;
+                overflow: auto;
+                font-family: oblique;
+                box-shadow: 3px 3px 10px white;
+                margin-bottom:40px;
+            }
+.navbar a {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px yellow; 
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "oblique";
+  border-radius:5px;
+  font-style:oblique;
+}
+.navbar a:hover {
+                background-color:rgb(251, 13, 13);
+            }
+            @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+.logo{
+  flex: 1;
+  font-size: 40px;
+  padding: 10px;
+  margin-left: 50px;
+  font-family: oblique;
+  font-style:oblique;
+}
+ul.menu{
+    flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.menu li{
+     
+  flex: 1;
+  list-style-type: none;
+  font-size: 16px;
+ font-style: oblique;
+  text-align: left;
+}
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: yellowgreen;
+  text-decoration: underline;
+}
+/*.image1{
+      background-image: url("https://green-travel-blog.com/wp-content/uploads/2022/09/woman-sitting-on-a-rock-in-norway-while-solo-traveling-%C2%A9EVERST-adobestock-2048x1366.jpeg");
+      background-repeat: no-repeat;
+      background-position: center;
+     /*overflow: hidden;
+     max-width:100%;  
+height:1000px;  
+     text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:-30px;
+  margin-top:0px;
+}*/
+  /* .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Place the video behind other content */
+        .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Place the video behind other content */
+    }
+
+.video-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+ .heading h1{
+     font-size:100px;
+     color:yellow;
+     font-family:'Brush Script MT', cursive;
+     font-weight:"normal";
+     margin-left:500px;
+}
+.image-heading .form{
+      flex:1;
+      display:flex;
+      flex-flow:row wrap;
+      justify-content:center;
+      align-content: center;
+      background-color:darkgrey;
+      border-radius: 5px;
+      width: 85%;
+   padding:1% 2%;
+   margin-left:84px;
+}
+.image-heading .where,
+.image-heading .date,
+.image-heading .book{
+    padding:15px;
+    border-radius:10px;
+    margin-right:10px;
+    outline:0;
+    border:none;
+    font-size:18px;
+    font-style: oblique;
+}
+.image-heading .where{
+    flex:2;
+    width:40%;
+}
+.image-heading .date{
+    flex:1;
+     width:25%;
+}
+.image-heading .book{
+    flex:1;
+    width:25%;
+    background-color: yellow;
+}
+  
+  .services {
+            display: table;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .service-item {
+            flex: 1;
+            padding: 20px 10px;
+            border: lightcyan solid 1px;
+            text-align: center;
+            margin: 50px 20px;
+            transition: all 1s;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            background-color:lightcyan;
+            float: left;
+  width:45.33%;
+        }
+
+        .service-item:hover {
+            box-shadow: 3px 3px 20px lightsteelblue;
+        }
+
+        .service-item h2 {
+            font-family: monospace;
+            font-size: 18px;
+            width: 50px;
+            color: #001f38;;
+            flex: 1;
+        }
+
+        .service-item img {
+            width: 70px;
+            height: 70px;
+            flex: 1;
+            display:table
+}
+.place-text{
+         text-align:center;
+         color:orange;
+}
+
+.place-text h2{
+         text-align:center;
+         letter-spacing:1px;
+         color:orange;
+         font-style: oblique;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+.card{
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 80%;
+  height: auto;
+}
+.card img{
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card .text{
+  padding:20px;
+  line-height:50px;
+  font-style: oblique;
+}
+.card .card-box{
+   display:flex;
+   flex-flow: row;
+  background-color: #fde02f;
+  font-size: 18px;
+  font-family: Roboto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card .time{
+  flex:1;
+}
+.card .location{
+    flex:2;
+}
+.card .cost{
+  color: #4cafad;
+  font-size: 20px;
+}
+
+/*------------Zoom in Photos--------------*/
+.zoom-img {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.zoom-img .img-card {
+  position: absolute;
+  overflow: hidden;
+}
+
+.img-card img {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.card:hover .zoom-img img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+}
+.about-us{
+     flex:1;
+}
+.about-us img{
+        width:500px;
+        height:700px;
+        box-shadow:2px 2px 6px black;
+        margin-left:-100px;
+}
+.about-text{
+  flex: 1;
+  /*width: 100px;*/
+  display: flex;
+  flex-flow: column wrap;
+}
+.about-text h1,
+.about-text h2,
+.about-text p,
+.about-text input,
+.about-text a{
+  flex: 1;
+  font-family: Roboto;
+}
+.about-text h2 {
+  color: #ffc342;
+  font-size: 18px;
+}
+.about-text h1{
+  flex: 1;
+  font-family: Barlow Condensed;
+  font-size: 60px;
+  color: #191d34;
+  width: 450px;
+}
+.about-text label{
+  padding-bottom: 10px;
+  color: #506172;
+  font-weight: bolder;
+  font-family: Roboto;
+  letter-spacing: 1px;
+}
+.about-text p {
+  width: 500px;
+  line-height: 30px;
+  color: #506172;
+  font-weight: bolder;
+  padding: 50px 0;
+}
+
+.about-text a {
+  background-color: #fff;
+  border: 2px solid #014b85;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 180px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  color: #014b85;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.about-text a:hover {
+  background-color: #014b85;
+  color: #fff;
+}button{
+    padding:10px;
+    background-color:cornflowerblue;
+    color:black;
+    font-size:medium;
+    border-radius: 5px;
+    margin-bottom:-600px;
+    margin-left:-280px;
+}
+
+.py-4{
+    padding: 4rem 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.title-wrap{
+    text-align: center;
+    padding: 1.4rem 0;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.lg-title{
+    font-size: 1.8rem;
+}
+.sm-title{
+    display: block;
+    color: #787878;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.7;
+}
+.my-2{
+    margin: 2rem 0;
+}
+.shadow:hover{
+    -webkit-box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+            box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+}
+.featured-item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.featured-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+}
+@media screen and (max-width: 460px){
+    .featured-item-content{
+        -webkit-transform: translateY(68%);
+            -ms-transform: translateY(68%);
+                transform: translateY(68%);
+    }
+}
+@media screen and (min-width: 768px){
+    
+    }
+    .featured-row, .services-row, .footer-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .featured-item{
+        margin: 0;
+    }
+    @media screen and (min-width: 1400px){
+    .featured-row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.featured-item-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    -webkit-transform: translateY(68%);
+        -ms-transform: translateY(68%);
+            transform: translateY(68%);
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.featured-item-content span{
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+}
+.featured-item-content .text{
+    color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.featured-item:hover .featured-item-content{
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+}
+.featured-item-content button {
+    margin:0px 10px;
+    border:2px solid #fabd02;
+    padding:13px 35px;
+    letter-spacing :1px;
+    color: #000;
+    border-radius:30px;
+    background-color: #fabd02;
+     text-decoration:none;
+     margin-left:40px;
+
+
+}
+.btnone{
+    margin:0px 10px;
+    border:2px solid #fabd02;
+    padding:13px 35px;
+    letter-spacing :1px;
+    color: #000;
+    border-radius:30px;
+    background-color: #fabd02;
+     text-decoration:none;
+}
+.button{
+  
+    margin:0px 10px;
+    border:2px solid #fabd02;
+    padding:13px 35px;
+    letter-spacing :1px;
+    color: #000;
+    border-radius:30px;
+    background-color: #fabd02;
+     text-decoration:none;
+
+
+}
+     
+
+
+
+    </style>
+    </head>
+    <body>
+      <script>
+        
+              function showAlert() {
+            const destination = document.querySelector('input[type="text"]').value;
+            const date = document.querySelector('input[type="date"]').value;
+
+            if (!destination || !date) {
+                alert("Please enter both destination and date before booking.");
+            } else {
+                alert("Booking successful!");
+            }
+        }
+      
+        function showAlert(destination) {
+        const date = document.querySelector('input[type="date"]').value;
+
+        if (!date) {
+            alert("Please enter and destination a date before booking.");
+        } else {
+            alert("Booking for " + tour + " on " + date + " is unsuccessful!");
+        }
+    }
+    function fillDetails(destination) {
+            // Get the select element
+            const ele = document.querySelector('select[name="list"]');
+
+            // Set the selected destination in the dropdown
+            ele.value = destination;
+        }
+//     function navigateTo(url) {
+//     window.location.href = url;
+//   }
+//   // JavaScript function to open the modal and display the clicked image
+// function openModal(imageUrl) {
+//   var modal = document.getElementById("imageModal");
+//   var modalImage = document.getElementById("modalImage");
+
+//   modal.style.display = "block";
+//   modalImage.src = imageUrl;
+// }
+
+// // JavaScript function to close the modal
+// function closeModal() {
+//   var modal = document.getElementById("imageModal");
+//   modal.style.display = "none";
+// }
+
+
+        </script>
+
+        
+
+        
+
+           
+     <form method="GET">
+        <section class="navbar">
+        <div class="logo">Start Journey</div>
+            <ul class="menu">
+            <li><a  href="#">Home</a></li>
+            <li><a  href="#destination">Destination</a>
+            </li>
+            <li><a  href="contact">Contact Us</a></li>
+            <li><a  href="signin">SignIn</a></li>
+            <li><a href="signin">Logout</a></li>
+            <!-- <li><a  class="active" href="signup">SignUp</a></li> -->
+            </ul>
+        </form>
+              
+        </section>
+        <section class="vi">
+          <div class="video-container">
+              <video autoplay loop muted plays-inline>
+                  <source src="video3.mp4" type="video/mp4">
+              </video>
+          </div>
+            <div class="image-heading">
+                <div class="heading">
+                 <h1>Find your next Tour</h1>
+                </div>
+                <form class="form">
+                
+                <input type="text" class="where" list="mylist" placeholder="Where would you like to go ?" required>&nbsp;&nbsp;&nbsp;&nbsp;
+                <datalist id="mylist">
+                  <option>Switerland</option>
+                  <option>Goa</option>
+                  <option>Arakuvalley</option>
+                  <option>Kerala</option>
+                  <option>Paris</option>
+                </datalist>
+            
+                <input type="date" class="date" required>&nbsp;&nbsp;&nbsp;
+                    <a href="#"  class="book" onclick="showAlert(); return false;">book</a>
+            </form>
+            </div>
+        </section><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="services">
+          <table>
+            <tr>
+                        <div class="service-item">
+            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/tour-guide_onzla9.png">
+            <h2>8000+ Our Local Guides</h2>
+          </div>
+           <div class="service-item">
+            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293738/reliability_jbpn4g.png">
+            <h2>100%  Trusted Tour Agency</h2>
+           </div>
+          <div class="service-item">
+            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293635/experience_a3fduk.png">
+            <h2>28+ Years of Travel Experience</h2>
+          </div>
+          <div class="service-item">
+             <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/feedback_s8z7d9.png">
+             <h2>98% Our Travelers are Happy</h2>
+          </div>
+        </tr>
+          </table>
+        </section>
+       
+        
+        <section id="featured" class="py-4">
+          <div class="container">
+            <div class="title-wrap">
+              <span class="sm-title">know about some places before your travel</span>
+              <h2 class="lg-title" id="#section1">featured places</h2>
+            </div>
+        
+            <div class="featured-row">
+              <div class="featured-item my-2 shadow">
+                <!-- Add an onclick attribute to open the modal -->
+                
+                  <img src="https://www.planetware.com/wpimages/2020/02/brazil-in-pictures-beautiful-places-to-photograph-fernando-de-noronha.jpg" alt="featured place">
+                 
+                <!-- ... (repeat for other featured items) -->
+                <div class="featured-item-content">
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 id="#destination">Brazil</h3>
+                  </span>
+                  
+                  <button><a href="brazil"  class="btnone" target="blank">View  <i
+                    class="fas fa-external-link-alt"></i></a>
+                  </button>
+                </div>
+              </div>
+
+              <div class="featured-item my-2 shadow">
+                <!-- Add an onclick attribute to open the modal -->
+                
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50-PFSJ0bZCCeKGGirz6W5sI7xcU7C0diZuvz_ZTZsty5t9HmUZbTM6NU1A&s=8.jpg" alt="featured place">
+                
+                <!-- ... (repeat for other featured items) -->
+                <div class="featured-item-content">
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 id="#destination">Australia</h3>
+                  </span>
+                  <button><a href="aus"  class="btnone" target="blank">View  <i
+                    class="fas fa-external-link-alt"></i></a>
+                  </button>
+                </div>
+              </div>
+             
+           
+              <div class="featured-item my-2 shadow">
+                <!-- Add an onclick attribute to open the modal -->
+                
+                  <img src="https://media.houseandgarden.co.uk/photos/63b40af32580e79a92857054/3:2/w_1689,h_1126,c_limit/luxury-water-villa-with-pool-outdoor_2000.jpeg" alt="featured place">
+              
+                <!-- ... (repeat for other featured items) -->
+                <div class="featured-item-content">
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                   <h3 id="destination">Maldives</h3>
+                  </span>
+                  <button><a href="maldives"  class="btnone" target="blank">View <i
+                    class="fas fa-external-link-alt"></i></a>
+                  </button>
+                </div>
+              </div>
+              <div class="featured-item my-2 shadow">
+                <!-- Add an onclick attribute to open the modal -->
+                
+                  <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2015/11/Dense-Forests-in-Lambasingi.jpg" alt="featured place">
+              
+                <!-- ... (repeat for other featured items) -->
+                <div class="featured-item-content">
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                   <h3 id="destination">Lambasingi</h3>
+                  </span>
+                  <button><a href="maldives"  class="btnone" target="blank">View <i
+                    class="fas fa-external-link-alt"></i></a>
+                  </button>
+                </div>
+              </div>
+              <div class="featured-item my-2 shadow">
+                <!-- Add an onclick attribute to open the modal -->
+                
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0harZnXGuxwcOmWzXMRJv3fiATaA3iO-GIRrNFqxglm-UYLsAvwUHUrI_Y-pjsYTI9w&usqp=CAU.jpeg" alt="featured place">
+              
+                <!-- ... (repeat for other featured items) -->
+                <div class="featured-item-content">
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                   <h3 id="destination">Goa</h3>
+                  </span>
+                  <button><a href="maldives"  class="btnone" target="blank">View <i
+                    class="fas fa-external-link-alt"></i></a>
+                  </button>
+                </div>
+              </div>
+              <div class="featured-item my-2 shadow">
+                <!-- Add an onclick attribute to open the modal -->
+                
+                  <img src="https://assets.gqindia.com/photos/5cdc1e9478abdc6a505bfad6/16:9/w_2560%2Cc_limit/kerala.jpg" alt="featured place">
+                
+                <!-- ... (repeat for other featured items) -->
+                <div class="featured-item-content">
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 id="destination">kerala</h3>
+                  </span>
+                  <button><a href="kerala"  class="btnone" target="blank">View <i
+                    class="fas fa-external-link-alt"></i></a>
+                  </button>
+                </div>
+              </div></div>
+              </div>
+              <section class="about">
+                <div class="about-us">
+                  <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293719/outdoor_tjjhxk.jpg">
+                </div>
+                
+                <div class="about-text">
+                  <h2>ABOUT OUR COMPANY:</h2>
+                  <h1>We are Go Trip Travels Support Company</h1>
+                  <p>At travels company, we are passionate about helping people explore the world.<br>
+                    Our mission is to make travel accessible and enjoying for everyone </p>
+                </div>  
+                <div>
+                  
+                  <a href="#" class="button" target="blank">Learn More</a>
+                  
+                </div>
+            
+             </section>
+          
+              
+          </body>
+          </html>
+              

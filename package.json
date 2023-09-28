@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "api": "^5.0.8",
+    "apiu": "^0.0.1",
+    "detectlanguage": "^2.1.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "firebase": "^8.6.8",
+    "firebase-admin": "^11.10.1",
+    "node-telegram-bot": "^0.1.9",
+    "node-telegram-bot-api": "^0.61.0",
+    "node.js": "^0.0.1-security",
+    "packages": "^0.0.8",
+    "request": "^2.88.2",
+    "require": "^0.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
